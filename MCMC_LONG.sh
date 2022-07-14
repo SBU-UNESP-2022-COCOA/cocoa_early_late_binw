@@ -1,6 +1,5 @@
 #!/bin/bash
 #SBATCH --job-name=binw
-#SBATCH --array=1-9
 #SBATCH -p cpu_long
 #SBATCH -o ./projects/cocoa_early_late_binw/binW/%x_%A_%a.out
 #SBATCH -e ./projects/cocoa_early_late_binw/binW/%x_%A_%a.err
