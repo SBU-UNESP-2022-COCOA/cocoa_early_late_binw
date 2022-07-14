@@ -17,9 +17,8 @@ echo Slurm job NAME is $SLURM_JOB_NAME
 echo Slurm job ID is $SLURM_JOBID
 
 cd $SLURM_SUBMIT_DIR
-source activate cocoa_scratch
+source activate cocoa
 source start_cocoa
-export PATH=$PATH:/scratch/eubd/joao.reboucas/.envs/cocoa_scratch/bin
 export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
 
 mpirun -n ${SLURM_NTASKS} --mca btl tcp,self --bind-to core --map-by numa:pe=${OMP_NUM_THREADS} cobaya-run ./projects/early_late/MCMC_LONG_${SLURM_ARRAY_TASK_ID}.yaml -r
