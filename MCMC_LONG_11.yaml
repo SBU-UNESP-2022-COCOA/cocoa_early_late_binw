@@ -1,7 +1,7 @@
 ### Technical settings
 stop_at_error: False
 timing: True
-output: ./projects/elbinw/chains/MCMC0
+output: ./projects/elbinw/chains/MCMC11
 
 ### Likelihood and datasets
 likelihood:
