@@ -1,7 +1,7 @@
 ### Technical settings
 stop_at_error: False
 timing: True
-output: ./projects/elbinw/chains/MCMC11
+output: ./projects/elbinw/chains/MCMC109
 
 ### Likelihood and datasets
 likelihood:
@@ -19,16 +19,11 @@ likelihood:
       - te
       - ee
     lmax: 3000
-  # BAO from 6dF, BOSS dr7 and dr12 consensus
-  bao.sixdf_2011_bao:
-    path: ./external_modules/data/
-  bao.sdss_dr7_mgs:
-    path: ./external_modules/data/
-  bao.sdss_dr12_consensus_bao:
-    path: ./external_modules/data/
   # SNe from Pantheon
   sn.pantheon:
     path: ./external_modules/data/sn_data
+  # Strong Lensing from H0liCOW
+  h0licow.h0licowlike: null
 
 ### Theory model and code
 theory:
@@ -75,18 +70,18 @@ params:
   zc:
     value: 'lambda log10zc: 10**(log10zc)'
     latex: z_c
-  theta_i:
-    prior:
-      min: 0.01
-      max: 3.1
-    proposal: 0.05
-    latex: \theta_i
   yp2:
     prior:
       min: 0.9
       max: 1.1
     proposal: 0.01
     latex: y_p^2
+  theta_i:
+    prior:
+      min: 0.01
+      max: 3.1
+    proposal: 0.05
+    latex: \theta_i
   w0:
     value: -1.0
     latex: w_0
@@ -254,7 +249,7 @@ sampler:
     # ---------------------------------------------------------------------
     measure_speeds: True
     drag: False
-    oversample_power: 0.25
+    oversample_power: 0
     oversample_thin: True
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
