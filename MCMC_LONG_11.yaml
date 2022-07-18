@@ -123,6 +123,26 @@ params:
       scale: 0.1
     proposal: 0.05
     latex: w_2
+  w3: # from 1.5 to 2
+    prior:
+      min: -3
+      max: 1.0
+    ref:
+      dist: norm
+      loc: -1
+      scale: 0.1
+    proposal: 0.05
+    latex: w_3
+  w4: # from 2 to 3
+    prior:
+      min: -3
+      max: 1.0
+    ref:
+      dist: norm
+      loc: -1
+      scale: 0.1
+    proposal: 0.05
+    latex: w_4
   logA:
     prior:
       min: 1.61
