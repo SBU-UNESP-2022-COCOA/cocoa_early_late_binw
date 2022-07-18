@@ -53,7 +53,8 @@ theory:
       z3: 2.1
       # Last w chosen to -1
       w3: -1
-
+      halofit_version: 'casarini'
+      
 ### Parameters to sample
 params:
   fde_zc:
