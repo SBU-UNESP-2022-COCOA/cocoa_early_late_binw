@@ -4,14 +4,23 @@ I recommend git pull cocoa2 and recompile camb multifluid, I just removed the ve
 
 ## MCMC_LONG_*.yaml are binned W chains in the long queue, with or without EDE:
 1 - ACT+BAO+SNe, w/EDE
+
 2 - ACT+BAO+SNe+CMBLens
+
 3 - ACT+BAO+SNe+CMBLens, w/EDE
+
 4 - ACT+BAO+SNe+CMBLens
+
 5 - ACT+SNe+CMBLens, w/EDE
+
 6 - ACT+SNe+CMBLens
+
 7 - ACT+SL+BAO+SNe+CMBLens, w/ EDE
+
 8 - ACT+SL+BAO+SNe+CMBLens
+
 9 - ACT+SL+SNe, w/EDE
+
 10 - ACT+SL+SNe
 
 ## Scripts
