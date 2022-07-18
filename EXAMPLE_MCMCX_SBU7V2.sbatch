@@ -6,8 +6,8 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks=4
 #SBATCH --cpus-per-task=10
-#SBATCH --partition=long-40core
-#SBATCH -t 48:00:00
+#SBATCH --partition=medium-40core
+#SBATCH -t 11:59:00
 
 echo Running on host `hostname`
 echo Time is `date`
@@ -30,4 +30,9 @@ else
   export OMP_NUM_THREADS=1
 fi
 
-$CONDA_PREFIX/bin/mpirun -n ${SLURM_NTASKS} --mca btl tcp,self --bind-to core --map-by numa:pe=${OMP_NUM_THREADS} cobaya-run ./projects/elbinw/MCMC_LONG_${SLURM_ARRAY_TASK_ID}.yaml -r
+timeout 42600 $CONDA_PREFIX/bin/mpirun -n ${SLURM_NTASKS} --mca btl tcp,self --bind-to core --map-by numa:pe=${OMP_NUM_THREADS} cobaya-run ./projects/elbinw/MCMC_LONG_${SLURM_ARRAY_TASK_ID}.yaml -r
+
+if [ $? -eq 124 ]; then
+sleep 30 
+sbatch --array=${SLURM_ARRAY_TASK_ID}-${SLURM_ARRAY_TASK_ID} ./projects/elbinw/EXAMPLE_MCMCX_SBU7V2.sbatch
+fi
