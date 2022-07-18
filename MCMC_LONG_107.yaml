@@ -80,7 +80,7 @@ params:
   zc:
     value: 'lambda log10zc: 10**(log10zc)'
     latex: z_c
-   theta_i:
+  theta_i:
     prior:
       min: 0.01
       max: 3.1

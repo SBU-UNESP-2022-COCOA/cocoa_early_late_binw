@@ -5,7 +5,7 @@
 #SBATCH -e wbin-%A_%a.out.err
 #SBATCH --nodes=1
 #SBATCH --ntasks=4
-#SBATCH --cpus-per-task=6
+#SBATCH --cpus-per-task=7
 #SBATCH --partition=long-28core
 #SBATCH -t 48:00:00
 
