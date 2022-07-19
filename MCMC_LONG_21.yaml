@@ -46,7 +46,7 @@ theory:
       models: [3,1,0,0]
       AccuracyBoost: 1.2
       num_of_components: 2
-      max_l: 10000
+      max_l: 5000
       wn: 0.5 # sets n=3 for EDE
       # Redshift binning
       z1: 0.7
@@ -55,7 +55,13 @@ theory:
       # Last w chosen to -1
       w3: -1
       halofit_version: 'casarini'
-
+      # ------------------------------------
+      num_massive_neutrinos: 1
+      nnu: 3.046
+      accurate_massive_neutrino_transfers: false
+      k_per_logint: 20
+      # ------------------------------------
+      
 ### Parameters to sample
 params:
   fde_zc:

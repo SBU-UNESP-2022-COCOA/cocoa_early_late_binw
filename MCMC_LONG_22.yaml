@@ -36,7 +36,7 @@ likelihood:
     data_file: DES_Y1.dataset
     integration_accuracy: 0 # integer 0, 1 or 2
     kmax_boltzmann: 15.0
-
+      
 ### Theory model and code
 theory:
   camb:
@@ -48,7 +48,7 @@ theory:
       models: [3,1,0,0]
       AccuracyBoost: 1.2
       num_of_components: 1
-      max_l: 10000
+      max_l: 5000
       # Redshift binning
       z1: 0.7
       z2: 1.4
@@ -56,6 +56,12 @@ theory:
       # Last w chosen to -1
       w3: -1
       halofit_version: 'casarini'
+      # ------------------------------------
+      num_massive_neutrinos: 1
+      nnu: 3.046
+      accurate_massive_neutrino_transfers: false
+      k_per_logint: 20
+      # ------------------------------------
 
 ### Parameters to sample
 params:
