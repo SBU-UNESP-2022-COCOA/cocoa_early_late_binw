@@ -43,7 +43,13 @@ theory:
       # Last w chosen to -1
       w3: -1
       halofit_version: 'casarini'
-
+      # ------------------------------------
+      num_massive_neutrinos: 1
+      nnu: 3.046
+      accurate_massive_neutrino_transfers: false
+      k_per_logint: 20
+      # ------------------------------------
+      
 ### Parameters to sample
 params:
   fde_zc:
