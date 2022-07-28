@@ -19,13 +19,6 @@ likelihood:
       - te
       - ee
     lmax: 3000
-  # BAO from 6dF, BOSS dr7 and dr12 consensus
-  bao.sixdf_2011_bao:
-    path: ./external_modules/data/
-  bao.sdss_dr7_mgs:
-    path: ./external_modules/data/
-  bao.sdss_dr12_consensus_bao:
-    path: ./external_modules/data/
   # SNe from Pantheon
   sn.pantheon:
     path: ./external_modules/data/sn_data
@@ -36,7 +29,7 @@ likelihood:
     data_file: DES_Y3.dataset
     integration_accuracy: 0 # integer 0, 1 or 2
     kmax_boltzmann: 15.0
-
+      
 ### Theory model and code
 theory:
   camb:
@@ -47,8 +40,9 @@ theory:
       dark_energy_model: 'MultiFluidDE'
       models: [3,1,0,0]
       AccuracyBoost: 1.2
-      num_of_components: 1
+      num_of_components: 2
       max_l: 10000
+      wn: 0.5 # sets n=3 for EDE
       # Redshift binning
       z1: 0.7
       z2: 1.4
@@ -65,6 +59,35 @@ theory:
       
 ### Parameters to sample
 params:
+  fde_zc: 
+    prior:
+      min: 0.001
+      max: 0.5
+    ref:
+      dist: norm
+      loc: 0.05
+      scale: 0.01
+    proposal: 0.01
+    latex: f_{EDE}(z_c)
+  log10zc:
+    prior:
+      min: 3
+      max: 4.3
+    ref:
+      dist: norm
+      loc: 3.5
+      scale: 0.1
+    latex: \log_{10}(z_c)
+    drop: True
+  zc:
+    value: 'lambda log10zc: 10**(log10zc)'
+    latex: z_c
+  theta_i:
+    prior:
+      min: 0.01
+      max: 3.1
+    proposal: 0.05
+    latex: \theta_i
   yp2:
     prior:
       min: 0.9
@@ -74,7 +97,7 @@ params:
   w0:
     prior:
       min: -3
-      max: -0.1
+      max: -0.01
     ref:
       dist: norm
       loc: -1
@@ -84,7 +107,7 @@ params:
   w1:
     prior:
       min: -3
-      max: -0.1
+      max: 1.0
     ref:
       dist: norm
       loc: -1
@@ -94,7 +117,7 @@ params:
   w2:
     prior:
       min: -3
-      max: -0.1
+      max: 1.0
     ref:
       dist: norm
       loc: -1
@@ -218,6 +241,167 @@ params:
   omegan2:
     derived: 'lambda omegan, H0: omegan*(H0/100)**2'
     latex: \Omega_\mathrm{\\nu} h^2
+# DES-Y3 3x2 nuissance parameter Start
+  DES_DZ_S1:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 0.018
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.018
+    proposal: 0.005
+    latex: \Delta z_\mathrm{s,DES}^1
+  DES_DZ_S2:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 0.015
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.015
+    proposal: 0.005
+    latex: \Delta z_\mathrm{s,DES}^2
+  DES_DZ_S3:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 0.011
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.011
+    proposal: 0.005
+    latex: \Delta z_\mathrm{s,DES}^3
+  DES_DZ_S4:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 0.017
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 0.017
+    proposal: 0.005
+    latex: \Delta z_\mathrm{s,DES}^4
+  DES_M1:
+    prior:
+      dist: norm
+      loc: -0.006
+      scale: 0.009
+    ref:
+      dist: norm
+      loc: -0.006
+      scale: 0.009
+    proposal: 0.004
+    latex: m_\mathrm{DES}^1
+  DES_M2:
+    prior:
+      dist: norm
+      loc: -0.02
+      scale: 0.008
+    ref:
+      dist: norm
+      loc: -0.02
+      scale: 0.008
+    proposal: 0.004
+    latex: m_\mathrm{DES}^2
+  DES_M3:
+    prior:
+      dist: norm
+      loc: -0.024
+      scale: 0.008
+    ref:
+      dist: norm
+      loc: -0.024
+      scale: 0.008
+    proposal: 0.004
+    latex: m_\mathrm{DES}^3
+  DES_M4:
+    prior:
+      dist: norm
+      loc: -0.037
+      scale: 0.008
+    ref:
+      dist: norm
+      loc: -0.037
+      scale: 0.008
+    proposal: 0.003
+    latex: m_\mathrm{DES}^4
+ # Lensing photo-z errors
+  DES_DZ_L1:
+    prior:
+      dist: norm
+      loc: 0.006
+      scale: 0.004
+    ref:
+      dist: norm
+      loc: 0.006
+      scale: 0.004
+    proposal: 0.002
+    latex: \Delta z_\mathrm{l,DES}^1
+  DES_DZ_L2:
+    prior:
+      dist: norm
+      loc: 0.001
+      scale: 0.003
+    ref:
+      dist: norm
+      loc: 0.0001
+      scale: 0.003
+    proposal: 0.001
+    latex: \Delta z_\mathrm{l,DES}^2
+  DES_DZ_L3:
+    prior:
+      dist: norm
+      loc: 0.004
+      scale: 0.003
+    ref:
+      dist: norm
+      loc: 0.0004
+      scale: 0.003
+    proposal: 0.001
+    latex: \Delta z_\mathrm{l,DES}^3
+  DES_DZ_L4:
+    prior:
+      dist: norm
+      loc: -0.002
+      scale: 0.005
+    ref:
+      dist: norm
+      loc: -0.002
+      scale: 0.005
+    proposal: 0.002
+    latex: \Delta z_\mathrm{l,DES}^4
+  DES_DZ_L5:
+    prior:
+      dist: norm
+      loc: -0.007
+      scale: 0.01
+    ref:
+      dist: norm
+      loc: -0.007
+      scale: 0.01
+    proposal: 0.005
+    latex: \Delta z_\mathrm{l,DES}^5
+  DES_BMAG_1:
+    value: 0.63
+    latex: b_\mathrm{BMAG-DES}^1
+  DES_BMAG_2:
+    value: -3.04
+    latex: b_\mathrm{BMAG-DES}^2
+  DES_BMAG_3:
+    value: -1.33
+    latex: b_\mathrm{BMAG-DES}^3
+  DES_BMAG_4:
+    value: 2.50
+    latex: b_\mathrm{BMAG-DES}^4
+  DES_BMAG_5:
+    value: 1.93
+    latex: b_\mathrm{BMAG-DES}^5
+# DES-Y3 3x2 nuissance parameter End
 
 ### Sampler configurations
 sampler:
@@ -226,7 +410,7 @@ sampler:
     # File (w/ path) or matrix defining a covariance matrix for the proposal:
     # - null (default): will be generated from params info (prior and proposal)
     # - matrix: remember to set `covmat_params` to the parameters in the matrix
-    covmat: 
+    covmat: "./projects/elbinw/MCMC5.covmat"
     covmat_params:
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
@@ -257,17 +441,17 @@ sampler:
     # Exploiting speed hierarchy
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
-    measure_speeds: True
+    measure_speeds: False
     drag: False
-    oversample_power: 0.4
+    oversample_power: 0.25
     oversample_thin: True
     blocking:
       - [1,
           [
-            logA, ns, theta_MC_100, omegabh2, omegach2, tau, w0, w1, w2
+            logA, ns, theta_MC_100, omegabh2, omegach2, tau, w0, w1, w2, theta_i, log10zc, fde_zc
           ]
         ]
-      - [4,
+      - [3,
           [
             DES_DZ_S1, DES_DZ_S2, DES_DZ_S3, DES_DZ_S4, DES_A1_1, DES_A1_2,
             DES_A2_1, DES_A2_2, DES_BTA_1,
@@ -300,4 +484,4 @@ sampler:
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
     Rminus1_single_split: 4
-
+ 
