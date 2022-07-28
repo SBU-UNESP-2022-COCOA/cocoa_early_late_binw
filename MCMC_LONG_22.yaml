@@ -5,7 +5,7 @@ output: ./projects/elbinw/chains/MCMC22
 
 ### Likelihood and datasets
 likelihood:
-  # Baseline - ACT (lmax = 3000) + Planck lowl EE + Planck TT (lowL + lmax=650)
+  # Baseline - ACT (lmax: 3000) + Planck lowl EE + Planck TT (lowL + lmax=650)
   planck_2018_lowl.EE:
     path: ./external_modules/
   planck_2018_lowl.TT:
@@ -48,7 +48,7 @@ theory:
       models: [3,1,0,0]
       AccuracyBoost: 1.2
       num_of_components: 1
-      max_l: 5000
+      max_l: 10000
       # Redshift binning
       z1: 0.7
       z2: 1.4
@@ -132,8 +132,8 @@ params:
     ref:
       dist: norm
       loc: 1.04109
-      scale: 0.0004
-    proposal: 0.0002
+      scale: 0.001
+    proposal: 0.001
     latex: 100\theta_\mathrm{MC}
     drop: true
     renames: theta  
@@ -226,7 +226,7 @@ sampler:
     # File (w/ path) or matrix defining a covariance matrix for the proposal:
     # - null (default): will be generated from params info (prior and proposal)
     # - matrix: remember to set `covmat_params` to the parameters in the matrix
-    covmat: 
+    covmat: "./projects/elbinw/MCMC22.covmat"
     covmat_params:
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
@@ -257,10 +257,36 @@ sampler:
     # Exploiting speed hierarchy
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
-    measure_speeds: True
+    measure_speeds: False
     drag: False
-    oversample_power: 0
+    oversample_power: 0.4
     oversample_thin: True
+    blocking:
+      - [1,
+          [
+            logA, ns, theta_MC_100, omegabh2, omegach2, tau, w0, w1, w2
+          ]
+        ]
+      - [4,
+          [
+            DES_DZ_S1, DES_DZ_S2, DES_DZ_S3, DES_DZ_S4, DES_A1_1, DES_A1_2,
+            DES_A2_1, DES_A2_2, DES_BTA_1,
+            DES_B1_1, DES_B1_2, DES_B1_3, DES_B1_4, DES_B1_5,
+            DES_DZ_L1, DES_DZ_L2, DES_DZ_L3, DES_DZ_L4, DES_DZ_L5
+          ]
+        ]
+      - [25,
+          [
+            DES_M1, DES_M2, DES_M3, DES_M4, DES_PM1, DES_PM2, DES_PM3, DES_PM4, DES_PM5
+          ]
+        ]
+      - [50,
+          [
+            yp2, A_cib_217, gal545_A_217, calib_217T, ps_A_100_100, ps_A_217_217, ksz_norm, 
+            A_planck, calib_100T, ps_A_143_217, ps_A_143_143, gal545_A_100,
+            gal545_A_143_217, gal545_A_143, xi_sz_cib, A_sz
+          ]
+        ]
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
     # Avoid chain getting suck forever
@@ -274,4 +300,4 @@ sampler:
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
     Rminus1_single_split: 4
-
+ 

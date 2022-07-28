@@ -7,7 +7,7 @@
 #SBATCH --ntasks=4
 #SBATCH --cpus-per-task=7
 #SBATCH --partition=extended-28core
-#SBATCH -t 100:00:00
+#SBATCH -t 110:00:00
 
 echo Running on host `hostname`
 echo Time is `date`
@@ -15,7 +15,7 @@ echo Directory is `pwd`
 echo Slurm job NAME is $SLURM_JOB_NAME
 echo Slurm job ID is $SLURM_JOBID
 echo Number of task is $SLURM_NTASKS
-echo Number of cpus per task is $$SLURM_CPUS_PER_TASK
+echo Number of cpus per task is $SLURM_CPUS_PER_TASK
 
 cd $SLURM_SUBMIT_DIR
 module purge > /dev/null 2>&1

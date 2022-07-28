@@ -259,8 +259,34 @@ sampler:
     # ---------------------------------------------------------------------
     measure_speeds: True
     drag: False
-    oversample_power: 0
+    oversample_power: 0.4
     oversample_thin: True
+    blocking:
+      - [1,
+          [
+            logA, ns, theta_MC_100, omegabh2, omegach2, tau, w0, w1, w2
+          ]
+        ]
+      - [4,
+          [
+            DES_DZ_S1, DES_DZ_S2, DES_DZ_S3, DES_DZ_S4, DES_A1_1, DES_A1_2,
+            DES_A2_1, DES_A2_2, DES_BTA_1,
+            DES_B1_1, DES_B1_2, DES_B1_3, DES_B1_4, DES_B1_5,
+            DES_DZ_L1, DES_DZ_L2, DES_DZ_L3, DES_DZ_L4, DES_DZ_L5
+          ]
+        ]
+      - [25,
+          [
+            DES_M1, DES_M2, DES_M3, DES_M4, DES_PM1, DES_PM2, DES_PM3, DES_PM4, DES_PM5
+          ]
+        ]
+      - [50,
+          [
+            yp2, A_cib_217, gal545_A_217, calib_217T, ps_A_100_100, ps_A_217_217, ksz_norm, 
+            A_planck, calib_100T, ps_A_143_217, ps_A_143_143, gal545_A_100,
+            gal545_A_143_217, gal545_A_143, xi_sz_cib, A_sz
+          ]
+        ]
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
     # Avoid chain getting suck forever
