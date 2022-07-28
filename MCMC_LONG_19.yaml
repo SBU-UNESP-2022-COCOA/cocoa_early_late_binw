@@ -1,7 +1,7 @@
 ### Technical settings
 stop_at_error: False
 timing: True
-output: ./projects/elbinw/chains/MCMC11
+output: ./projects/elbinw/chains/MCMC19
 
 ### Likelihood and datasets
 likelihood:
@@ -19,16 +19,11 @@ likelihood:
       - te
       - ee
     lmax: 3000
-  # BAO from 6dF, BOSS dr7 and dr12 consensus
-  bao.sixdf_2011_bao:
-    path: ./external_modules/data/
-  bao.sdss_dr7_mgs:
-    path: ./external_modules/data/
-  bao.sdss_dr12_consensus_bao:
-    path: ./external_modules/data/
   # SNe from Pantheon
   sn.pantheon:
     path: ./external_modules/data/sn_data
+  # Strong Lensing from H0liCOW
+  h0licow.h0licowlike: null
   des_y3.des_cosmic_shear:
     path: ./external_modules/data/des_y3
     data_file: DES_Y1.dataset
@@ -353,7 +348,7 @@ sampler:
     # File (w/ path) or matrix defining a covariance matrix for the proposal:
     # - null (default): will be generated from params info (prior and proposal)
     # - matrix: remember to set `covmat_params` to the parameters in the matrix
-    covmat: "./projects/elbinw/MCMC1.covmat"
+    covmat: "./projects/elbinw/MCMC9.covmat"
     covmat_params:
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
