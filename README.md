@@ -1,6 +1,5 @@
 # Early+Late+BinW project chains
 Clone this repo into /Cocoa/projects. All of the output will be inside the binW folder.
-I recommend git pull cocoa2 and recompile camb multifluid, I just removed the verbosity from casarini, it was polluting too much the .out file
 
 ## Chain descriptions
 `MCMC_LONG_*.yaml` are binned W chains, with or without EDE. The datasets are:
@@ -55,6 +54,12 @@ I recommend git pull cocoa2 and recompile camb multifluid, I just removed the ve
 
 204 - ACT+BAO+SNe+CMBLens, 5 bins
 
+205 - ACT+SNe+CMBLens, 5 bins w/EDE
+
+207 - ACT+SNe+BAO+CMBLens+SL, 5 bins w/EDE
+
+209 - ACT+SL+SNe, 5 bins w/EDE
+
 21 - ACT+BAO+SNe+DESY1 3x2, w/EDE
 
 22 - ACT+BAO+SNe+DESY1 3x2
@@ -66,6 +71,20 @@ I recommend git pull cocoa2 and recompile camb multifluid, I just removed the ve
 25 - ACT+BAO+SNe+CMBLens+DESY3 3x2, w/EDE
 
 26 - ACT+BAO+SNe+CMBLens+DESY3 3x2
+
+301 - ACT+BAO+SNe, 10 bins w/EDE
+
+302 - ACT+BAO+SNe, 10 bins
+
+303 - ACT+BAO+SNe+CMBLens, 10 bins w/EDE
+
+304 - ACT+BAO+SNe+CMBLens, 10 bins
+
+305 - ACT+SNe+CMBLens, 10 bins w/EDE
+
+307 - ACT+SNe+BAO+CMBLens+SL, 10 bins w/EDE
+
+309 - ACT+SL+SNe, 10 bins w/EDE
 ## Scripts
 MCMC_LONG.sh is for the chains with binW, need to run with array ID. Configure number of nodes, cores, etc.
 ## Running:
