@@ -4,16 +4,10 @@
 #SBATCH --output=DY3-%A_%a.out
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=4
-#SBATCH --ntasks-per-socket=2
-#SBATCH --cpus-per-task=5
-#SBATCH --time=110:00:00
+#SBATCH --cpus-per-task=7
+#SBATCH --time=120:00:00
 #SBATCH --partition=standard
-#SBATCH --qos=qual_qos_timeifler
 #SBATCH --account=timeifler
-
-## --- SBATCH --partition=high_priority
-## --- SBATCH --qos=user_qos_timeifler
-## --- SBATCH --account=timeifler
 
 # Clear the environment from any previously loaded modules
 module purge > /dev/null 2>&1
