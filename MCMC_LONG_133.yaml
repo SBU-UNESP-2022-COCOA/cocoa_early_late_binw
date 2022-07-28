@@ -1,16 +1,13 @@
 ### Technical settings
 stop_at_error: False
 timing: True
-output: ./projects/elbinw/chains/MCMC132
+output: ./projects/elbinw/chains/MCMC133
 
 ### Likelihood and datasets
 likelihood:
   # Baseline - ACT (lmax = 3000) + Planck lowl EE + Planck TT (lowL + lmax=650)
   planck_2018_lowl.EE:
     path: ./external_modules/
-  planck_2018_highl_plik.TT:
-    path: ./external_modules/
-    clik_file: plc_3.0/hi_l/plik/plik_rd12_HM_v22_TT_lmax_650.clik
   pyactlike.ACTPol_lite_DR4:
     components:
       - tt
