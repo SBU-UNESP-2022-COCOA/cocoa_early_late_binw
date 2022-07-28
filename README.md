@@ -34,17 +34,63 @@ Clone this repo into /Cocoa/projects. All of the output will be inside the binW 
 
 101 - ACT+BAO+SNe, LCDM
 
+102 - ACT + Planck TT lowL, lmax = 650 + lowEE, just EDE
+
 103 - ACT+BAO+SNe+CMBLens, LCDM
 
+104 - ACT + Planck TT (lmax = 650, no lowL) + lowEE, just EDE
+
 105 - ACT+SNe+CMBLens, LCDM
+
+106 - ACT + Planck lowEE, just EDE
 
 107 - ACT+SL+BAO+SNe+CMBLens, LCDM
 
 109 - ACT+SL+SNe, LCDM
 
+111 - ACT+SNe+BAO+DESY1Shear, just EDE
+
+112 - ACT+SNe+BAO+DESY3Shear, just EDE
+
+113 - ACT+SNe+BAO+CMBLens+DESY1Shear, just EDE
+
+114 - ACT+SNe+BAO+CMBLens+DESY3Shear, just EDE
+
+115 - ACT+SNe+CMBLens+DESY1Shear, just EDE
+
+116 - ACT+SNe+CMBLens+DESY3Shear, just EDE
+
+117 - ACT+SNe+BAO+CMBLens+SL+DESY1Shear, just EDE
+
+118 - ACT+SNe+BAO+CMBLens+SL+DESY3Shear, just EDE
+
+119 - ACT+SNe+SL+DESY1Shear, just EDE
+
+120 - ACT+SNe+SL+DESY3Shear, just EDE
+
+121 - ACT+SNe+BAO+DESY13x2, just EDE
+
+122 - ACT+SNe+BAO+DESY33x2, just EDE
+
 123 - ACT+SNe+BAO+CMBLens+DESY1 3x2, just EDE
 
-125 - ACT+SNe+BAO+CMBLens+DESY3 3x2, just EDE
+124 - ACT+SNe+BAO+CMBLens+DESY3 3x2, just EDE
+
+125 - ACT+SNe+CMBLens+DESY1 3x2, just EDE
+
+126 - ACT+SNe+CMBLens+DESY3 3x2, just EDE
+
+127 - ACT+SNe+BAO+CMBLens+SL+DESY1 3x2, just EDE
+
+128 - ACT+SNe+BAO+CMBLens+SL+DESY3 3x2, just EDE
+
+129 - ACT+SNe+SL+DESY13x2, just EDE
+
+130 - ACT+SNe+SL+DESY33x2, just EDE
+
+131 - Same as 102 with covmat
+
+132 - Same as 104 with covmat
 
 201 - ACT+BAO+SNe, 5 bins w/EDE
 
