@@ -32,6 +32,18 @@ Clone this repo into /Cocoa/projects. All of the output will be inside the binW 
 
 14 - ACT+SNe+BAO+DESY1 Shear+CMBLens
 
+15 - ACT+SNe+CMBLens+DESY1 Shear, w/ EDE
+
+16 - ACT+SNe+CMBLens+DESY3 Shear, w/ EDE
+
+17 - ACT+BAO+SNe+CMBLens+SL+DESY1 Shear, w/ EDE
+
+18 - ACT+BAO+SNe+CMBLens+SL+DESY3 Shear, w/ EDE
+
+19 - ACT+SNe+SL+DESY1 Shear, w/ EDE
+
+20 - ACT+SNe+SL+DESY3 Shear, w/ EDE
+
 101 - ACT+BAO+SNe, LCDM
 
 102 - ACT + Planck TT lowL, lmax = 650 + lowEE, just EDE
@@ -88,9 +100,35 @@ Clone this repo into /Cocoa/projects. All of the output will be inside the binW 
 
 130 - ACT+SNe+SL+DESY33x2, just EDE
 
-131 - Same as 102 with covmat
+131 - Same as 102 with different neutrino model and added covmat
 
-132 - Same as 104 with covmat
+132 - Same as 104 with different neutrino model and added covmat
+
+133 - Same as 106 with different neutrino model and added covmat
+
+134 - ACT+DESY1 Shear, just EDE
+
+135 - ACT (Planck TT 30<ell<650 + lowL EE)+DESY1 Shear, just EDE
+
+136 - ACT (Planck lowL EE)+DESY1 Shear, just EDE
+
+137 - ACT+DESY3 Shear, just EDE
+
+138 - ACT (Planck TT 30<ell<650 + lowL EE)+DESY3 Shear, just EDE
+
+139 - ACT (Planck lowL EE)+DESY3 Shear, just EDE
+
+140 - ACT+DESY1 3x2, just EDE
+
+141 - ACT (Planck TT 30<ell<650 + lowL EE)+DESY1 3x2, just EDE
+
+142 - ACT (Planck lowL EE)+DESY1 3x2, just EDE
+
+143 - ACT+DESY3 3x2, just EDE
+
+144 - ACT (Planck TT 30<ell<650 + lowL EE)+DESY3 3x2, just EDE
+
+145 - ACT (Planck lowL EE)+DESY3 3x2, just EDE
 
 201 - ACT+BAO+SNe, 5 bins w/EDE
 
