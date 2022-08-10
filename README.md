@@ -156,6 +156,14 @@ Clone this repo into /Cocoa/projects. All of the output will be inside the binW 
 
 26 - ACT+BAO+SNe+CMBLens+DESY3 3x2
 
+27 - ACT+BAO+SNe+CMBLens+SL+DESY1 3x2, w/ EDE
+
+28 - ACT+BAO+SNe+CMBLens+SL+DESY3 3x2, w/ EDE
+
+29 - ACT+SNe+SL+DESY1 3x2, w/EDE
+
+30 - ACT+SNe+SL+DESY3 3x2, w/EDE
+
 301 - ACT+BAO+SNe, 10 bins w/EDE
 
 302 - ACT+BAO+SNe, 10 bins
