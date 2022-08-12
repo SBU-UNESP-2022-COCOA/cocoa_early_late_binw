@@ -7,6 +7,7 @@
 #SBATCH --cpus-per-task=7
 #SBATCH --time=120:00:00
 #SBATCH --partition=standard
+#SBATCH --qos=qual_qos_timeifler
 #SBATCH --account=timeifler
 
 # Clear the environment from any previously loaded modules
