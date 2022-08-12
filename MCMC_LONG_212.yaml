@@ -1,7 +1,7 @@
 ### Technical settings
 stop_at_error: False
 timing: True
-output: ./projects/elbinw/chains/MCMC11
+output: ./projects/elbinw/chains/MCMC212
 
 ### Likelihood and datasets
 likelihood:
@@ -31,7 +31,7 @@ likelihood:
     path: ./external_modules/data/sn_data
   des_y3.des_cosmic_shear:
     path: ./external_modules/data/des_y3
-    data_file: DES_Y1.dataset
+    data_file: DES_Y3.dataset
     integration_accuracy: 0 # integer 0, 1 or 2
     kmax_boltzmann: 15.0
 
@@ -43,17 +43,19 @@ theory:
     use_renames: True
     extra_args:
       dark_energy_model: 'MultiFluidDE'
-      models: [3,1,0,0]
+      models: [4,1,0,0]
       AccuracyBoost: 1.2
       num_of_components: 2
       max_l: 10000
       wn: 0.5 # sets n=3 for EDE
       # Redshift binning
-      z1: 0.7
-      z2: 1.4
-      z3: 2.1
+      z1: 0.5
+      z2: 1.0
+      z3: 1.5
+      z4: 2.0
+      z5: 3.0
       # Last w chosen to -1
-      w3: -1
+      w5: -1
       halofit_version: 'casarini'
       # ------------------------------------
       num_massive_neutrinos: 1
@@ -99,7 +101,7 @@ params:
       max: 1.1
     proposal: 0.01
     latex: y_p^2
-  w0:
+  w0: # from 0 to 0.5
     prior:
       min: -3
       max: -0.01
@@ -109,7 +111,7 @@ params:
       scale: 0.1
     proposal: 0.05
     latex: w_0
-  w1:
+  w1: # from 0.5 to 1
     prior:
       min: -3
       max: 1.0
@@ -119,7 +121,7 @@ params:
       scale: 0.1
     proposal: 0.05
     latex: w_1
-  w2:
+  w2: # from 1 to 1.5
     prior:
       min: -3
       max: 1.0
@@ -129,6 +131,26 @@ params:
       scale: 0.1
     proposal: 0.05
     latex: w_2
+  w3: # from 1.5 to 2
+    prior:
+      min: -3
+      max: 1.0
+    ref:
+      dist: norm
+      loc: -1
+      scale: 0.1
+    proposal: 0.05
+    latex: w_3
+  w4: # from 2 to 3
+    prior:
+      min: -3
+      max: 1.0
+    ref:
+      dist: norm
+      loc: -1
+      scale: 0.1
+    proposal: 0.05
+    latex: w_4
   logA:
     prior:
       min: 1.61
@@ -246,105 +268,96 @@ params:
   omegan2:
     derived: 'lambda omegan, H0: omegan*(H0/100)**2'
     latex: \Omega_\mathrm{\\nu} h^2
-# DES-Y1 cosmic shear nuissance parameter Start
+ # DES-Y3 cosmic shear nuissance parameter Start
   DES_DZ_S1:
     prior:
       dist: norm
-      loc: -0.001
-      scale: 0.016
+      loc: 0.0
+      scale: 0.018
     ref:
       dist: norm
-      loc: -0.001
-      scale: 0.016
+      loc: 0.0
+      scale: 0.018
     proposal: 0.005
     latex: \Delta z_\mathrm{s,DES}^1
   DES_DZ_S2:
     prior:
       dist: norm
-      loc: -0.019
-      scale: 0.013
+      loc: 0.0
+      scale: 0.015
     ref:
       dist: norm
-      loc: -0.019
-      scale: 0.013
+      loc: 0.0
+      scale: 0.015
     proposal: 0.005
     latex: \Delta z_\mathrm{s,DES}^2
   DES_DZ_S3:
     prior:
       dist: norm
-      loc: 0.009
+      loc: 0.0
       scale: 0.011
     ref:
       dist: norm
-      loc: 0.009
+      loc: 0.0
       scale: 0.011
     proposal: 0.005
     latex: \Delta z_\mathrm{s,DES}^3
   DES_DZ_S4:
     prior:
       dist: norm
-      loc: -0.018
-      scale: 0.022
+      loc: 0.0
+      scale: 0.017
     ref:
       dist: norm
-      loc: -0.018
-      scale: 0.022
+      loc: 0.0
+      scale: 0.017
     proposal: 0.005
     latex: \Delta z_\mathrm{s,DES}^4
   DES_M1:
     prior:
       dist: norm
-      loc: 0.012
-      scale: 0.023
+      loc: -0.006
+      scale: 0.009
     ref:
       dist: norm
-      loc: 0.012
-      scale: 0.023
-    proposal: 0.005
+      loc: -0.006
+      scale: 0.009
+    proposal: 0.004
     latex: m_\mathrm{DES}^1
   DES_M2:
     prior:
       dist: norm
-      loc: 0.012
-      scale: 0.023
+      loc: -0.02
+      scale: 0.008
     ref:
       dist: norm
-      loc: 0.012
-      scale: 0.023
-    proposal: 0.005
+      loc: -0.02
+      scale: 0.008
+    proposal: 0.004
     latex: m_\mathrm{DES}^2
   DES_M3:
     prior:
       dist: norm
-      loc: 0.012
-      scale: 0.023
+      loc: -0.024
+      scale: 0.008
     ref:
       dist: norm
-      loc: 0.012
-      scale: 0.023
-    proposal: 0.005
+      loc: -0.024
+      scale: 0.008
+    proposal: 0.004
     latex: m_\mathrm{DES}^3
   DES_M4:
     prior:
       dist: norm
-      loc: 0.012
-      scale: 0.023
+      loc: -0.037
+      scale: 0.008
     ref:
       dist: norm
-      loc: 0.012
-      scale: 0.023
-    proposal: 0.005
+      loc: -0.037
+      scale: 0.008
+    proposal: 0.003
     latex: m_\mathrm{DES}^4
-  DES_A2_1: #TATT, not used for Y1
-    value: 0.0
-    latex: A_\mathrm{2-IA,DES}^1 
-  DES_A2_2: #TATT, not used for Y1
-    value: 0.0
-    latex: A_\mathrm{2-IA,DES}^2
-  DES_BTA_1: #TATT, not used for Y1
-    value: 1.0
-    latex: A_\mathrm{BTA-IA,DES}^1
-# DES-Y1 cosmic shear nuissance parameter End
+# DES-Y3 cosmic shear nuissance parameter End
 
 ### Sampler configurations
 sampler:
@@ -396,7 +409,8 @@ sampler:
         ]
       - [3,
           [
-            DES_DZ_S1, DES_DZ_S2, DES_DZ_S3, DES_DZ_S4, DES_A1_1, DES_A1_2
+            DES_DZ_S1, DES_DZ_S2, DES_DZ_S3, DES_DZ_S4, DES_A1_1, DES_A1_2,
+            DES_A2_1, DES_A2_2, DES_BTA_1
           ]
         ]
       - [25,

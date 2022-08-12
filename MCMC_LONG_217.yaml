@@ -1,7 +1,7 @@
 ### Technical settings
 stop_at_error: False
 timing: True
-output: ./projects/elbinw/chains/MCMC11
+output: ./projects/elbinw/chains/MCMC217
 
 ### Likelihood and datasets
 likelihood:
@@ -29,6 +29,10 @@ likelihood:
   # SNe from Pantheon
   sn.pantheon:
     path: ./external_modules/data/sn_data
+  planck_2018_lensing.clik:
+    path: ./external_modules/
+  # Strong Lensing from H0liCOW
+  h0licow.h0licowlike: null
   des_y3.des_cosmic_shear:
     path: ./external_modules/data/des_y3
     data_file: DES_Y1.dataset
@@ -43,17 +47,19 @@ theory:
     use_renames: True
     extra_args:
       dark_energy_model: 'MultiFluidDE'
-      models: [3,1,0,0]
+      models: [4,1,0,0]
       AccuracyBoost: 1.2
       num_of_components: 2
       max_l: 10000
       wn: 0.5 # sets n=3 for EDE
       # Redshift binning
-      z1: 0.7
-      z2: 1.4
-      z3: 2.1
+      z1: 0.5
+      z2: 1.0
+      z3: 1.5
+      z4: 2.0
+      z5: 3.0
       # Last w chosen to -1
-      w3: -1
+      w5: -1
       halofit_version: 'casarini'
       # ------------------------------------
       num_massive_neutrinos: 1
@@ -99,7 +105,7 @@ params:
       max: 1.1
     proposal: 0.01
     latex: y_p^2
-  w0:
+  w0: # from 0 to 0.5
     prior:
       min: -3
       max: -0.01
@@ -109,7 +115,7 @@ params:
       scale: 0.1
     proposal: 0.05
     latex: w_0
-  w1:
+  w1: # from 0.5 to 1
     prior:
       min: -3
       max: 1.0
@@ -119,7 +125,7 @@ params:
       scale: 0.1
     proposal: 0.05
     latex: w_1
-  w2:
+  w2: # from 1 to 1.5
     prior:
       min: -3
       max: 1.0
@@ -129,6 +135,26 @@ params:
       scale: 0.1
     proposal: 0.05
     latex: w_2
+  w3: # from 1.5 to 2
+    prior:
+      min: -3
+      max: 1.0
+    ref:
+      dist: norm
+      loc: -1
+      scale: 0.1
+    proposal: 0.05
+    latex: w_3
+  w4: # from 2 to 3
+    prior:
+      min: -3
+      max: 1.0
+    ref:
+      dist: norm
+      loc: -1
+      scale: 0.1
+    proposal: 0.05
+    latex: w_4
   logA:
     prior:
       min: 1.61
@@ -353,7 +379,7 @@ sampler:
     # File (w/ path) or matrix defining a covariance matrix for the proposal:
     # - null (default): will be generated from params info (prior and proposal)
     # - matrix: remember to set `covmat_params` to the parameters in the matrix
-    covmat: "./projects/elbinw/MCMC1.covmat"
+    covmat: "./projects/elbinw/MCMC7.covmat"
     covmat_params:
     # ---------------------------------------------------------------------
     # ---------------------------------------------------------------------
