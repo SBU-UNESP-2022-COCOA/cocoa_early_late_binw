@@ -7,9 +7,8 @@
 #SBATCH --ntasks-per-socket=2
 #SBATCH --cpus-per-task=5
 #SBATCH --time=110:00:00
-#SBATCH --partition=high_priority
-#SBATCH --qos=user_qos_timeifler
-#SBATCH --account=timeifler
+#SBATCH --partition=standard
+#SBATCH --account=cosmolike
 
 # Clear the environment from any previously loaded modules
 module purge > /dev/null 2>&1

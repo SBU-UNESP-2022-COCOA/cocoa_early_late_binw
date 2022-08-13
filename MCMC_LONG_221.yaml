@@ -509,7 +509,7 @@ sampler:
     blocking:
       - [1,
           [
-            logA, ns, theta_MC_100, omegabh2, omegach2, tau, w0, w1, w2, theta_i, log10zc, fde_zc
+            logA, ns, theta_MC_100, omegabh2, omegach2, tau, w0, w1, w2, w3, w4, theta_i, log10zc, fde_zc
           ]
         ]
       - [3,
