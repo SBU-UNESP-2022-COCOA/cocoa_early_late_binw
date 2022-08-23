@@ -144,6 +144,46 @@ Clone this repo into /Cocoa/projects. All of the output will be inside the binW 
 
 209 - ACT+SL+SNe, 5 bins w/EDE
 
+211 - ACT+BAO+SNe+DESY1 Shear, 5 bins w/ EDE
+
+212 - ACT+BAO+SNe+DESY3 Shear, 5 bins w/ EDE
+
+213 - ACT+BAO+SNe+CMBLens+DESY1 Shear, 5 bins w/ EDE
+
+214 - ACT+BAO+SNe+CMBLens+DESY3 Shear, 5 bins w/ EDE
+
+215 - ACT+SNe+CMBLens+DESY1 Shear, 5 bins w/ EDE
+
+216 - ACT+SNe+CMBLens+DESY3 Shear, 5 bins w/ EDE
+
+217 - ACT+BAO+SNe+CMBLens+SL+DESY1 Shear, 5 bins w/ EDE
+
+218 - ACT+BAO+SNe+CMBLens+SL+DESY3 Shear, 5 bins w/ EDE
+
+219 - ACT+SNe+SL+DESY1 Shear, 5 bins w/ EDE
+
+220 - ACT+SNe+SL+DESY3 Shear, 5 bins w/ EDE
+
+221 - ACT+BAO+SNe+DESY1 3x2, 5 bins w/ EDE
+
+222 - ACT+BAO+SNe+DESY3 3x2, 5 bins w/ EDE
+
+223 - ACT+BAO+SNe+CMBLens+DESY1 3x2, 5 bins w/ EDE
+
+224 - ACT+BAO+SNe+CMBLens+DESY3 3x2, 5 bins w/ EDE
+
+225 - ACT+SNe+CMBLens+DESY1 3x2, 5 bins w/ EDE
+
+226 - ACT+SNe+CMBLens+DESY3 3x2, 5 bins w/ EDE
+
+227 - ACT+BAO+SNe+CMBLens+SL+DESY1 3x2, 5 bins w/ EDE
+
+228 - ACT+BAO+SNe+CMBLens+SL+DESY3 3x2, 5 bins w/ EDE
+
+229 - ACT+SNe+SL+DESY1 3x2, 5 bins w/ EDE
+
+230 - ACT+SNe+SL+DESY3 3x2, 5 bins w/ EDE
+
 21 - ACT+BAO+SNe+DESY1 3x2, w/EDE
 
 22 - ACT+BAO+SNe+DESY1 3x2
@@ -177,6 +217,87 @@ Clone this repo into /Cocoa/projects. All of the output will be inside the binW 
 307 - ACT+SNe+BAO+CMBLens+SL, 10 bins w/EDE
 
 309 - ACT+SL+SNe, 10 bins w/EDE
+
+311 - ACT+BAO+SNe+DESY1 Shear, 10 bins w/ EDE
+
+312 - ACT+BAO+SNe+DESY3 Shear, 10 bins w/ EDE
+
+313 - ACT+BAO+SNe+CMBLens+DESY1 Shear, 10 bins w/ EDE
+
+314 - ACT+BAO+SNe+CMBLens+DESY3 Shear, 10 bins w/ EDE
+
+315 - ACT+SNe+CMBLens+DESY1 Shear, 10 bins w/ EDE
+
+316 - ACT+SNe+CMBLens+DESY3 Shear, 10 bins w/ EDE
+
+317 - ACT+BAO+SNe+CMBLens+SL+DESY1 Shear, 10 bins w/ EDE
+
+318 - ACT+BAO+SNe+CMBLens+SL+DESY3 Shear, 10 bins w/ EDE
+
+319 - ACT+SNe+SL+DESY1 Shear, 10 bins w/ EDE
+
+320 - ACT+SNe+SL+DESY3 Shear, 10 bins w/ EDE
+
+321 - ACT+BAO+SNe+DESY1 3x2, 10 bins w/ EDE
+
+322 - ACT+BAO+SNe+DESY3 3x2, 10 bins w/ EDE
+
+323 - ACT+BAO+SNe+CMBLens+DESY1 3x2, 10 bins w/ EDE
+
+324 - ACT+BAO+SNe+CMBLens+DESY3 3x2, 10 bins w/ EDE
+
+325 - ACT+SNe+CMBLens+DESY1 3x2, 10 bins w/ EDE
+
+326 - ACT+SNe+CMBLens+DESY3 3x2, 10 bins w/ EDE
+
+327 - ACT+BAO+SNe+CMBLens+SL+DESY1 3x2, 10 bins w/ EDE
+
+328 - ACT+BAO+SNe+CMBLens+SL+DESY3 3x2, 10 bins w/ EDE
+
+329 - ACT+SNe+SL+DESY1 3x2, 10 bins w/ EDE
+
+330 - ACT+SNe+SL+DESY3 3x2, 10 bins w/ EDE
+
+51 - ACT+BAO+SNe+DESY1 Shear+Clustering, w/ EDE
+
+52 - ACT+BAO+SNe+DESY3 Shear+Clustering, w/ EDE
+
+53 - ACT+BAO+SNe+CMBLens+DESY1 Shear+Clustering, w/ EDE
+
+54 - ACT+BAO+SNe+CMBLens+DESY3 Shear+Clustering, w/ EDE
+
+55 - ACT+SNe+CMBLens+DESY1 Shear+Clustering, w/EDE
+
+56 - ACT+SNe+CMBLens+DESY3 Shear+Clustering, w/EDE
+
+57 - ACT+BAO+SNe+CMBLens+SL+DESY1 Shear+Clustering, w/EDE
+
+58 - ACT+BAO+SNe+CMBLens+SL+DESY3 Shear+Clustering, w/EDE
+
+59 - ACT+SNe+SL+DESY1 Shear+Clustering, w/EDE
+
+60 - ACT+SNe+SL+DESY3 Shear+Clustering, w/EDE
+
+61 - ACT+BAO+SNe+DESY1 Shear+GGL, w/EDE
+
+62 - ACT+BAO+SNe+DESY3 Shear+GGL, w/EDE
+
+63 - ACT+BAO+SNe+CMBLens+DESY1 Shear+GGL, w/EDE
+
+64 - ACT+BAO+SNe+CMBLens+DESY3 Shear+GGL, w/EDE
+
+65 - ACT+SNe+CMBLens+DESY1 Shear+GGL, w/EDE
+
+66 - ACT+SNe+CMBLens+DESY3 Shear+GGL, w/EDE
+
+67 - ACT+BAO+SNe+CMBLens+SL+DESY1 Shear+GGL, w/EDE
+
+68 - ACT+BAO+SNe+CMBLens+SL+DESY3 Shear+GGL, w/EDE
+
+69 - ACT+SNe+SL+DESY1 Shear+GGL, w/EDE
+
+70 - ACT+SNe+SL+DESY3 Shear+GGL, w/EDE
+
 ## Scripts
 MCMC_LONG.sh is for the chains with binW, need to run with array ID. Configure number of nodes, cores, etc.
 ## Running:
