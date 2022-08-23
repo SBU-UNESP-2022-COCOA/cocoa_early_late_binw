@@ -298,6 +298,18 @@ Clone this repo into /Cocoa/projects. All of the output will be inside the binW 
 
 70 - ACT+SNe+SL+DESY3 Shear+GGL, w/EDE
 
+401 - ACT+BAO+SNe+CMBLens, AxionEDE
+
+402 - ACT+BAO+SNe+CMBLens+DESY1 Shear, AxionEDE
+
+403 - ACT+BAO+SNe+CMBLens+DESY3 Shear, AxionEDE
+
+404 - ACT+BAO+SNe+CMBLens, Rock 'n' Roll
+
+405 - ACT+BAO+SNe+CMBLens+DESY1 Shear, Rock 'n' Roll
+
+406 - ACT+BAO+SNe+CMBLens+DESY3 Shear, Rock 'n' Roll
+
 ## Scripts
 MCMC_LONG.sh is for the chains with binW, need to run with array ID. Configure number of nodes, cores, etc.
 ## Running:
