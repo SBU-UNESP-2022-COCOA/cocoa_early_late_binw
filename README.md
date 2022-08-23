@@ -26,11 +26,11 @@ Clone this repo into /Cocoa/projects. All of the output will be inside the binW 
 
 11 - ACT+SNe+BAO+DESY1 Shear, w/ EDE
 
-12 - ACT+SNe+BAO+DESY1 Shear
+12 - ACT+SNe+BAO+DESY3 Shear, w/ EDE
 
 13 - ACT+SNe+BAO+DESY1 Shear+CMBLens, w/ EDE
 
-14 - ACT+SNe+BAO+DESY1 Shear+CMBLens
+14 - ACT+SNe+BAO+DESY3 Shear+CMBLens, w/ EDE
 
 15 - ACT+SNe+CMBLens+DESY1 Shear, w/ EDE
 
