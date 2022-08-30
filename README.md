@@ -44,21 +44,21 @@ Clone this repo into /Cocoa/projects. All of the output will be inside the binW 
 
 20 - ACT+SNe+SL+DESY3 Shear, w/ EDE
 
-101 - ACT+BAO+SNe, LCDM
+101 - ACT+BAO+SNe, just EDE
 
 102 - ACT + Planck TT lowL, lmax = 650 + lowEE, just EDE
 
-103 - ACT+BAO+SNe+CMBLens, LCDM
+103 - ACT+BAO+SNe+CMBLens, just EDE
 
 104 - ACT + Planck TT (lmax = 650, no lowL) + lowEE, just EDE
 
-105 - ACT+SNe+CMBLens, LCDM
+105 - ACT+SNe+CMBLens, just EDE
 
 106 - ACT + Planck lowEE, just EDE
 
-107 - ACT+SL+BAO+SNe+CMBLens, LCDM
+107 - ACT+SL+BAO+SNe+CMBLens, just EDE
 
-109 - ACT+SL+SNe, LCDM
+109 - ACT+SL+SNe, just EDE
 
 111 - ACT+SNe+BAO+DESY1Shear, just EDE
 
