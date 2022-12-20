@@ -4,101 +4,101 @@ Clone this repo into /Cocoa/projects. All of the output will be inside the binW 
 ## Chain descriptions
 `MCMC_LONG_*.yaml` are binned W chains, with or without EDE. The datasets are:
 
-1 - ACT+BAO+SNe, w/EDE
+1 - DC2, w/EDE
 
-2 - ACT+BAO+SNe+CMBLens
+2 - DC1
 
-3 - ACT+BAO+SNe+CMBLens, w/EDE
+3 - DC1, w/EDE
 
-4 - ACT+BAO+SNe+CMBLens
+4 - DC1
 
-5 - ACT+SNe+CMBLens, w/EDE
+5 - DC4, w/EDE
 
-6 - ACT+SNe+CMBLens
+6 - DC4
 
-7 - ACT+SL+BAO+SNe+CMBLens, w/EDE
+7 - DC3, w/EDE
 
-8 - ACT+SL+BAO+SNe+CMBLens
+8 - DC3
 
-9 - ACT+SNe+SL, w/EDE
+9 - DC5, w/EDE
 
-10 - ACT+SNe+SL
+10 - DC5
 
-11 - ACT+BAO+SNe+DESY1 Shear, w/EDE
+11 - DC2+DESY1 Shear, w/EDE
 
-12 - ACT+BAO+SNe+DESY3 Shear, w/EDE
+12 - DC2+DESY3 Shear, w/EDE
 
-13 - ACT+BAO+SNe+DESY1 Shear+CMBLens, w/EDE
+13 - DC1+DESY1 Shear, w/EDE
 
-14 - ACT+BAO+SNe+DESY3 Shear+CMBLens, w/EDE
+14 - DC1+DESY3 Shear, w/EDE
 
-15 - ACT+SNe+CMBLens+DESY1 Shear, w/EDE
+15 - DC4+DESY1 Shear, w/EDE
 
-16 - ACT+SNe+CMBLens+DESY3 Shear, w/EDE
+16 - DC4+DESY3 Shear, w/EDE
 
-17 - ACT+BAO+SNe+CMBLens+SL+DESY1 Shear, w/EDE
+17 - DC3+DESY1 Shear, w/EDE
 
-18 - ACT+BAO+SNe+CMBLens+SL+DESY3 Shear, w/EDE
+18 - DC3+DESY3 Shear, w/EDE
 
-19 - ACT+SNe+SL+DESY1 Shear, w/EDE
+19 - DC5+DESY1 Shear, w/EDE
 
-20 - ACT+SNe+SL+DESY3 Shear, w/EDE
+20 - DC5+DESY3 Shear, w/EDE
 
-101 - ACT+BAO+SNe, just EDE
+101 - DC2, just EDE
 
 102 - ACT + Planck TT lowL, lmax = 650 + lowEE, just EDE
 
-103 - ACT+BAO+SNe+CMBLens, just EDE
+103 - DC1, just EDE
 
 104 - ACT + Planck TT (lmax = 650, no lowL) + lowEE, just EDE
 
-105 - ACT+SNe+CMBLens, just EDE
+105 - DC4, just EDE
 
 106 - ACT + Planck lowEE, just EDE
 
-107 - ACT+SL+BAO+SNe+CMBLens, just EDE
+107 - DC3, just EDE
 
-109 - ACT+SNe+SL, just EDE
+109 - DC5, just EDE
 
-111 - ACT+BAO+SNe+DESY1 Shear, just EDE
+111 - DC2+DESY1 Shear, just EDE
 
-112 - ACT+BAO+SNe+DESY3 Shear, just EDE
+112 - DC2+DESY3 Shear, just EDE
 
-113 - ACT+BAO+SNe+CMBLens+DESY1 Shear, just EDE
+113 - DC1+DESY1 Shear, just EDE
 
-114 - ACT+BAO+SNe+CMBLens+DESY3 Shear, just EDE
+114 - DC1+DESY3 Shear, just EDE
 
-115 - ACT+SNe+CMBLens+DESY1 Shear, just EDE
+115 - DC4+DESY1 Shear, just EDE
 
-116 - ACT+SNe+CMBLens+DESY3 Shear, just EDE
+116 - DC4+DESY3 Shear, just EDE
 
-117 - ACT+BAO+SNe+CMBLens+SL+DESY1 Shear, just EDE
+117 - DC3+DESY1 Shear, just EDE
 
-118 - ACT+BAO+SNe+CMBLens+SL+DESY3 Shear, just EDE
+118 - DC3+DESY3 Shear, just EDE
 
-119 - ACT+SNe+SL+DESY1 Shear, just EDE
+119 - DC5+DESY1 Shear, just EDE
 
-120 - ACT+SNe+SL+DESY3 Shear, just EDE
+120 - DC5+DESY3 Shear, just EDE
 
-121 - ACT+BAO+SNe+DESY1 3x2, just EDE
+121 - DC2+DESY1 3x2, just EDE
 
-122 - ACT+BAO+SNe+DESY3 3x2, just EDE
+122 - DC2+DESY3 3x2, just EDE
 
-123 - ACT+BAO+SNe+CMBLens+DESY1 3x2, just EDE
+123 - DC1+DESY1 3x2, just EDE
 
-124 - ACT+BAO+SNe+CMBLens+DESY3 3x2, just EDE
+124 - DC1+DESY3 3x2, just EDE
 
-125 - ACT+SNe+CMBLens+DESY1 3x2, just EDE
+125 - DC4+DESY1 3x2, just EDE
 
-126 - ACT+SNe+CMBLens+DESY3 3x2, just EDE
+126 - DC4+DESY3 3x2, just EDE
 
-127 - ACT+BAO+SNe+CMBLens+SL+DESY1 3x2, just EDE
+127 - DC3+DESY1 3x2, just EDE
 
-128 - ACT+BAO+SNe+CMBLens+SL+DESY3 3x2, just EDE
+128 - DC3+DESY3 3x2, just EDE
 
-129 - ACT+SNe+SL+DESY1 3x2, just EDE
+129 - DC5+DESY1 3x2, just EDE
 
-130 - ACT+SNe+SL+DESY3 3x2, just EDE
+130 - DC5+DESY3 3x2, just EDE
 
 131 - Same as 102 with different neutrino model and added covmat
 
@@ -130,195 +130,195 @@ Clone this repo into /Cocoa/projects. All of the output will be inside the binW 
 
 145 - ACT (Planck lowL EE)+DESY3 3x2, just EDE
 
-201 - ACT+BAO+SNe, 5 bins w/EDE
+201 - DC2, 5 bins w/EDE
 
-202 - ACT+BAO+SNe, 5 bins
+202 - DC2, 5 bins
 
-203 - ACT+BAO+SNe+CMBLens, 5 bins w/EDE
+203 - DC1, 5 bins w/EDE
 
-204 - ACT+BAO+SNe+CMBLens, 5 bins
+204 - DC1, 5 bins
 
-205 - ACT+SNe+CMBLens, 5 bins w/EDE
+205 - DC4, 5 bins w/EDE
 
-207 - ACT+BAO+SNe+CMBLens+SL, 5 bins w/EDE
+207 - DC3, 5 bins w/EDE
 
-209 - ACT+SNe+SL, 5 bins w/EDE
+209 - DC5, 5 bins w/EDE
 
-211 - ACT+BAO+SNe+DESY1 Shear, 5 bins w/EDE
+211 - DC2+DESY1 Shear, 5 bins w/EDE
 
-212 - ACT+BAO+SNe+DESY3 Shear, 5 bins w/EDE
+212 - DC2+DESY3 Shear, 5 bins w/EDE
 
-213 - ACT+BAO+SNe+CMBLens+DESY1 Shear, 5 bins w/EDE
+213 - DC1+DESY1 Shear, 5 bins w/EDE
 
-214 - ACT+BAO+SNe+CMBLens+DESY3 Shear, 5 bins w/EDE
+214 - DC1+DESY3 Shear, 5 bins w/EDE
 
-215 - ACT+SNe+CMBLens+DESY1 Shear, 5 bins w/EDE
+215 - DC4+DESY1 Shear, 5 bins w/EDE
 
-216 - ACT+SNe+CMBLens+DESY3 Shear, 5 bins w/EDE
+216 - DC4+DESY3 Shear, 5 bins w/EDE
 
-217 - ACT+BAO+SNe+CMBLens+SL+DESY1 Shear, 5 bins w/EDE
+217 - DC3+DESY1 Shear, 5 bins w/EDE
 
-218 - ACT+BAO+SNe+CMBLens+SL+DESY3 Shear, 5 bins w/EDE
+218 - DC3+DESY3 Shear, 5 bins w/EDE
 
-219 - ACT+SNe+SL+DESY1 Shear, 5 bins w/EDE
+219 - DC5+DESY1 Shear, 5 bins w/EDE
 
-220 - ACT+SNe+SL+DESY3 Shear, 5 bins w/EDE
+220 - DC5+DESY3 Shear, 5 bins w/EDE
 
-221 - ACT+BAO+SNe+DESY1 3x2, 5 bins w/EDE
+221 - DC2+DESY1 3x2, 5 bins w/EDE
 
-222 - ACT+BAO+SNe+DESY3 3x2, 5 bins w/EDE
+222 - DC2+DESY3 3x2, 5 bins w/EDE
 
-223 - ACT+BAO+SNe+CMBLens+DESY1 3x2, 5 bins w/EDE
+223 - DC1+DESY1 3x2, 5 bins w/EDE
 
-224 - ACT+BAO+SNe+CMBLens+DESY3 3x2, 5 bins w/EDE
+224 - DC1+DESY3 3x2, 5 bins w/EDE
 
-225 - ACT+SNe+CMBLens+DESY1 3x2, 5 bins w/EDE
+225 - DC4+DESY1 3x2, 5 bins w/EDE
 
-226 - ACT+SNe+CMBLens+DESY3 3x2, 5 bins w/EDE
+226 - DC4+DESY3 3x2, 5 bins w/EDE
 
-227 - ACT+BAO+SNe+CMBLens+SL+DESY1 3x2, 5 bins w/EDE
+227 - DC3+DESY1 3x2, 5 bins w/EDE
 
-228 - ACT+BAO+SNe+CMBLens+SL+DESY3 3x2, 5 bins w/EDE
+228 - DC3+DESY3 3x2, 5 bins w/EDE
 
-229 - ACT+SNe+SL+DESY1 3x2, 5 bins w/EDE
+229 - DC5+DESY1 3x2, 5 bins w/EDE
 
-230 - ACT+SNe+SL+DESY3 3x2, 5 bins w/EDE
+230 - DC5+DESY3 3x2, 5 bins w/EDE
 
-21 - ACT+BAO+SNe+DESY1 3x2, w/EDE
+21 - DC2+DESY1 3x2, w/EDE
 
-22 - ACT+BAO+SNe+DESY3 3x2, w/EDE
+22 - DC2+DESY3 3x2, w/EDE
 
-23 - ACT+BAO+SNe+CMBLens+DESY1 3x2, w/EDE
+23 - DC1+DESY1 3x2, w/EDE
 
-24 - ACT+BAO+SNe+CMBLens+DESY3 3x2, w/EDE
+24 - DC1+DESY3 3x2, w/EDE
 
-25 - ACT+SNe+CMBLens+DESY1 3x2, w/EDE
+25 - DC4+DESY1 3x2, w/EDE
 
-26 - ACT+SNe+CMBLens+DESY3 3x2, w/EDE
+26 - DC4+DESY3 3x2, w/EDE
 
-27 - ACT+BAO+SNe+CMBLens+SL+DESY1 3x2, w/EDE
+27 - DC3+DESY1 3x2, w/EDE
 
-28 - ACT+BAO+SNe+CMBLens+SL+DESY3 3x2, w/EDE
+28 - DC3+DESY3 3x2, w/EDE
 
-29 - ACT+SNe+SL+DESY1 3x2, w/EDE
+29 - DC5+DESY1 3x2, w/EDE
 
-30 - ACT+SNe+SL+DESY3 3x2, w/EDE
+30 - DC5+DESY3 3x2, w/EDE
 
-301 - ACT+BAO+SNe, 10 bins w/EDE
+301 - DC2, 10 bins w/EDE
 
-302 - ACT+BAO+SNe, 10 bins
+302 - DC2, 10 bins
 
-303 - ACT+BAO+SNe+CMBLens, 10 bins w/EDE
+303 - DC1, 10 bins w/EDE
 
-304 - ACT+BAO+SNe+CMBLens, 10 bins
+304 - DC1, 10 bins
 
-305 - ACT+SNe+CMBLens, 10 bins w/EDE
+305 - DC4, 10 bins w/EDE
 
-307 - ACT+BAO+SNe+CMBLens+SL, 10 bins w/EDE
+307 - DC3, 10 bins w/EDE
 
-309 - ACT+SNe+SL, 10 bins w/EDE
+309 - DC5, 10 bins w/EDE
 
-311 - ACT+BAO+SNe+DESY1 Shear, 10 bins w/EDE
+311 - DC2+DESY1 Shear, 10 bins w/EDE
 
-312 - ACT+BAO+SNe+DESY3 Shear, 10 bins w/EDE
+312 - DC2+DESY3 Shear, 10 bins w/EDE
 
-313 - ACT+BAO+SNe+CMBLens+DESY1 Shear, 10 bins w/EDE
+313 - DC1+DESY1 Shear, 10 bins w/EDE
 
-314 - ACT+BAO+SNe+CMBLens+DESY3 Shear, 10 bins w/EDE
+314 - DC1+DESY3 Shear, 10 bins w/EDE
 
-315 - ACT+SNe+CMBLens+DESY1 Shear, 10 bins w/EDE
+315 - DC4+DESY1 Shear, 10 bins w/EDE
 
-316 - ACT+SNe+CMBLens+DESY3 Shear, 10 bins w/EDE
+316 - DC4+DESY3 Shear, 10 bins w/EDE
 
-317 - ACT+BAO+SNe+CMBLens+SL+DESY1 Shear, 10 bins w/EDE
+317 - DC3+DESY1 Shear, 10 bins w/EDE
 
-318 - ACT+BAO+SNe+CMBLens+SL+DESY3 Shear, 10 bins w/EDE
+318 - DC3+DESY3 Shear, 10 bins w/EDE
 
-319 - ACT+SNe+SL+DESY1 Shear, 10 bins w/EDE
+319 - DC5+DESY1 Shear, 10 bins w/EDE
 
-320 - ACT+SNe+SL+DESY3 Shear, 10 bins w/EDE
+320 - DC5+DESY3 Shear, 10 bins w/EDE
 
-321 - ACT+BAO+SNe+DESY1 3x2, 10 bins w/EDE
+321 - DC2+DESY1 3x2, 10 bins w/EDE
 
-322 - ACT+BAO+SNe+DESY3 3x2, 10 bins w/EDE
+322 - DC2+DESY3 3x2, 10 bins w/EDE
 
-323 - ACT+BAO+SNe+CMBLens+DESY1 3x2, 10 bins w/EDE
+323 - DC1+DESY1 3x2, 10 bins w/EDE
 
-324 - ACT+BAO+SNe+CMBLens+DESY3 3x2, 10 bins w/EDE
+324 - DC1+DESY3 3x2, 10 bins w/EDE
 
-325 - ACT+SNe+CMBLens+DESY1 3x2, 10 bins w/EDE
+325 - DC4+DESY1 3x2, 10 bins w/EDE
 
-326 - ACT+SNe+CMBLens+DESY3 3x2, 10 bins w/EDE
+326 - DC4+DESY3 3x2, 10 bins w/EDE
 
-327 - ACT+BAO+SNe+CMBLens+SL+DESY1 3x2, 10 bins w/EDE
+327 - DC3+DESY1 3x2, 10 bins w/EDE
 
-328 - ACT+BAO+SNe+CMBLens+SL+DESY3 3x2, 10 bins w/EDE
+328 - DC3+DESY3 3x2, 10 bins w/EDE
 
-329 - ACT+SNe+SL+DESY1 3x2, 10 bins w/EDE
+329 - DC5+DESY1 3x2, 10 bins w/EDE
 
-330 - ACT+SNe+SL+DESY3 3x2, 10 bins w/EDE
+330 - DC5+DESY3 3x2, 10 bins w/EDE
 
-51 - ACT+BAO+SNe+DESY1 Shear+Clustering, w/EDE
+51 - DC2+DESY1 Shear+Clustering, w/EDE
 
-52 - ACT+BAO+SNe+DESY3 Shear+Clustering, w/EDE
+52 - DC2+DESY3 Shear+Clustering, w/EDE
 
-53 - ACT+BAO+SNe+CMBLens+DESY1 Shear+Clustering, w/EDE
+53 - DC1+DESY1 Shear+Clustering, w/EDE
 
-54 - ACT+BAO+SNe+CMBLens+DESY3 Shear+Clustering, w/EDE
+54 - DC1+DESY3 Shear+Clustering, w/EDE
 
-55 - ACT+SNe+CMBLens+DESY1 Shear+Clustering, w/EDE
+55 - DC4+DESY1 Shear+Clustering, w/EDE
 
-56 - ACT+SNe+CMBLens+DESY3 Shear+Clustering, w/EDE
+56 - DC4+DESY3 Shear+Clustering, w/EDE
 
-57 - ACT+BAO+SNe+CMBLens+SL+DESY1 Shear+Clustering, w/EDE
+57 - DC3+DESY1 Shear+Clustering, w/EDE
 
-58 - ACT+BAO+SNe+CMBLens+SL+DESY3 Shear+Clustering, w/EDE
+58 - DC3+DESY3 Shear+Clustering, w/EDE
 
-59 - ACT+SNe+SL+DESY1 Shear+Clustering, w/EDE
+59 - DC5+DESY1 Shear+Clustering, w/EDE
 
-60 - ACT+SNe+SL+DESY3 Shear+Clustering, w/EDE
+60 - DC5+DESY3 Shear+Clustering, w/EDE
 
-61 - ACT+BAO+SNe+DESY1 Shear+GGL, w/EDE
+61 - DC2+DESY1 Shear+GGL, w/EDE
 
-62 - ACT+BAO+SNe+DESY3 Shear+GGL, w/EDE
+62 - DC2+DESY3 Shear+GGL, w/EDE
 
-63 - ACT+BAO+SNe+CMBLens+DESY1 Shear+GGL, w/EDE
+63 - DC1+DESY1 Shear+GGL, w/EDE
 
-64 - ACT+BAO+SNe+CMBLens+DESY3 Shear+GGL, w/EDE
+64 - DC1+DESY3 Shear+GGL, w/EDE
 
-65 - ACT+SNe+CMBLens+DESY1 Shear+GGL, w/EDE
+65 - DC4+DESY1 Shear+GGL, w/EDE
 
-66 - ACT+SNe+CMBLens+DESY3 Shear+GGL, w/EDE
+66 - DC4+DESY3 Shear+GGL, w/EDE
 
-67 - ACT+BAO+SNe+CMBLens+SL+DESY1 Shear+GGL, w/EDE
+67 - DC3+DESY1 Shear+GGL, w/EDE
 
-68 - ACT+BAO+SNe+CMBLens+SL+DESY3 Shear+GGL, w/EDE
+68 - DC3+DESY3 Shear+GGL, w/EDE
 
-69 - ACT+SNe+SL+DESY1 Shear+GGL, w/EDE
+69 - DC5+DESY1 Shear+GGL, w/EDE
 
-70 - ACT+SNe+SL+DESY3 Shear+GGL, w/EDE
+70 - DC5+DESY3 Shear+GGL, w/EDE
 
-401 - ACT+BAO+SNe+CMBLens, AxionEDE
+401 - DC1, AxionEDE
 
-402 - ACT+BAO+SNe+CMBLens+DESY1 Shear, AxionEDE
+402 - DC1+DESY1 Shear, AxionEDE
 
-403 - ACT+BAO+SNe+CMBLens+DESY3 Shear, AxionEDE
+403 - DC1+DESY3 Shear, AxionEDE
 
-404 - ACT+BAO+SNe+CMBLens, Rock 'n' Roll
+404 - DC1, Rock 'n' Roll
 
-405 - ACT+BAO+SNe+CMBLens+DESY1 Shear, Rock 'n' Roll
+405 - DC1+DESY1 Shear, Rock 'n' Roll
 
-406 - ACT+BAO+SNe+CMBLens+DESY3 Shear, Rock 'n' Roll
+406 - DC1+DESY3 Shear, Rock 'n' Roll
 
-901 - ACT+BAO+SNe, just EDE
+901 - DC2, just EDE
 
-902 - ACT+SNe+CMBLens, just EDE
+902 - DC4, just EDE
 
-903 - ACT+BAO+SNe+CMBLens, just EDE
+903 - DC1, just EDE
 
-904 - ACT+BAO+SNe+CMBLens+SL, just EDE
+904 - DC3, just EDE
 
-905 - ACT+SNe+SL, just EDE
+905 - DC5, just EDE
 
 
 ## Scripts
